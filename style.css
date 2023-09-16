@@ -1,0 +1,1167 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.container{
+  background-color:black;
+background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+overflow: hidden;
+}
+.img{
+  width:100%;
+  max-height: 600px;
+  filter: opacity(30%);
+  position: relative;
+}
+.container a{
+  position: absolute;
+  top:0;
+  left: 0;
+  display: block;
+  text-decoration: none;
+  font-size: 2.2rem;  
+  padding: 0.625rem; 
+  margin-left: 1.875rem;
+  font-weight:bolder;
+  font-family: sans-serif; 
+}
+.active {
+  display: flex;
+  align-items: center; 
+  color:orange;
+}
+.active i {
+  margin-right: 0.625rem; 
+font-size: 2.5rem; 
+}
+.container2{
+  position: absolute;
+  top:0;
+  right: 15vw;
+}
+.container2 a{
+  display: inline-flex;
+  justify-content:space-evenly;
+  list-style: none;
+  text-decoration: none;
+  padding: 1.5rem;
+  color:white;
+}
+
+.container2 a:not(.dropdown) {
+  transition: background-color 0.3s ease-in-out; 
+}
+
+
+.container2 a:not(.dropdown):hover {
+  color:orange;
+
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.text{
+  animation: fadeIn 2s ease-in-out;
+}
+
+.dropdown {
+ float: right;
+ overflow: hidden;
+ padding: 1.5rem;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0.2rem 1rem;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+  background-color:#4d4855;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+ background-color: white;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color:black;
+  padding:0.4rem 0.4rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.container3{
+  position: absolute;
+  top:0;
+  right: 4rem;
+  padding: 20px;
+}
+
+.btn{
+  padding: 0.5rem 1rem;
+  background-color:orange;
+  border-radius: 10px;
+  cursor: pointer;
+transition: transform 0.3s ease-in-out;
+} 
+.btn:hover{
+  transform: scale(1.1);
+}
+.text{
+  position: absolute;
+  top: 200px;
+  margin-left: 100px;
+  color:white;
+  font-family:sans-serif;
+  font-size: 30px;
+}
+.para{
+font-size:1.3rem;
+max-width: 600px;
+margin-top: 10px;
+text-align: justify;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.button{
+  margin-top: 10px;
+  padding: 10px 20px;
+    background-color:orange;
+    border-radius: 10px;
+    cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  }
+  .button:hover{
+  transform: scale(1.1);
+  }
+  .images1{
+    background-color:black;
+  background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+  }
+  .images1 img{
+    position: absolute;
+    top:100px;
+    width: 400px;
+    right: 100px;
+    animation: spin 20s linear infinite;
+  }
+  @keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+  }
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    
+    }
+    .card1,.card2,.card3,.card4{
+    margin-top: 50px;
+    margin-left: 70px;
+    width:300px;
+    height:250px;
+    border:1px solid white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .card1 i, .card2 i, .card3 i, .card4 i {
+      padding: 50px 30px;
+      color: orange;
+      }
+      .card1 i:hover,.card2 i:hover,.card3 i:hover,.card4 i:hover{
+      color:white;
+      }
+      .card1 h2, .card2 h2, .card3 h2, .card4 h2 {
+      position: absolute;
+      top:180px;
+      margin-left:30px; 
+      }
+      .card1 p, .card2 p, .card3 p, .card4 p {
+      padding:  20px 30px;
+      text-align: justify;
+      font-size: 20px; 
+      }
+      .card1:hover,.card2:hover,.card3:hover,.card4:hover{
+      background-color:orangered;
+      color:white;
+      }
+      @media (max-width: 600px) {
+        .card1,
+        .card2,
+        .card3,
+        .card4 {
+          width: 100%;
+          margin: 10px;  
+        }
+        .card1 h2,
+.card2 h2,
+.card3 h2,
+.card4 h2 {
+  position: static;
+  overflow: hidden;
+ 
+}
+ }
+ 
+ #para2{
+  margin-top: 50px;
+  color:orange;
+  font-size: 50px;
+  font-family: "Sofia", sans-serif;
+  text-shadow: 1px 1px 1px orange;
+  position: relative;
+  }
+  #para2:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background:orange;
+  margin-left: 530px;
+  top: 50%;
+  position: absolute;
+  }
+  #para2:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background:orange;
+  margin-left: 880px;
+  top: 50%;
+  position: absolute;
+  }
+  #heading1{
+  font-size: 50px;
+  letter-spacing:5px;
+  font-family: sans-serif;
+  }
+  .fooditems{
+    margin-top: 50px;
+   
+    display:inline-flex;
+    gap:100px;
+    }
+    .tea{
+    display: flex;
+    flex-direction: row;
+    }
+    .desc{
+    margin-left:20px;
+    }
+    .food{
+      display: inline-flex;
+      margin-left: 200px;
+      margin-top: 50px;
+      gap:200px;
+      }
+      .food-images{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+      }
+      .food-desc{
+      margin-left: 20px;
+      }
+      .border{
+      margin-top: 10px;
+      border-top: 1px solid #ccc;  
+      }
+      .border p{
+      margin-top: 10px;
+      }
+      .border p{
+        margin-top: 10px;
+        }
+        .booking p{
+        margin-top: 50px;
+        color:orange;
+        font-size: 50px;
+        font-family: "Sofia", sans-serif;
+        text-shadow: 1px 1px 1px orange;
+        position: relative;
+        }
+        .booking p:before {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 5px;
+        background:orange;
+        margin-left: 450px;
+        top: 50%;
+        position: absolute;
+        }
+        .booking p:after {
+          content: "";
+          display: block;
+          width: 100px;
+          height: 5px;
+          background:orange;
+          margin-left: 970px;
+          top: 50%;
+          position: absolute;
+          }
+          .couple-image{
+          display: flex;
+          flex-direction: row;
+          }
+          .couple-image img{
+          width:700px;
+          margin-left: 100px;
+          margin-top: 40px;
+          }
+          .registration-Form {
+            width: 650px;
+            margin-top:40px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color:orangered;
+            }
+            
+            #heading2{
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: "Sofia", sans-serif;
+            font-size: 40px;
+            color:green;
+            }
+            
+            table {
+            width: 100%;
+            }
+            
+            label {
+            font-weight: bold;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="number"],
+            textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            }
+            
+            textarea {
+            height: 100px;
+            }
+            
+            input[type="submit"] {
+            background-color:orange;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            width:100%;
+            }
+            
+            input[type="submit"]:hover {
+            background-color:yellow;
+            color: #000000;
+            font-size: larger;
+            font-weight: 600;
+            }
+            #datetime {
+              width: 100%;
+              padding: 8px;
+              border: 1px solid #ccc;
+              border-radius: 3px;
+              }
+              
+              @media (max-width: 425px) {
+              table tr td {
+                  display: block;
+                  width: 100%;
+              }
+              }
+              #chef-para{
+              margin-top: 50px;
+              color:orange;
+              font-size: 50px;
+              font-family: "Sofia", sans-serif;
+              text-shadow: 1px 1px 1px orange;
+              position: relative;
+              }
+              .flip-cards{
+                display: flex;
+                flex-direction: row;
+              }
+              .flip-cards {
+                display: flex;
+                margin-left:30px;
+                flex-wrap: wrap;
+            }
+            .chef-card1,.chef-card2,.chef-card3,.chef-card4{
+              margin-top: 50px;
+              margin-left:auto;
+              margin-right: auto;
+              width:300px;
+              height:250px;
+              border:1px solid white;
+              box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+            .chef-card1 img,
+            .chef-card2 img,
+            .chef-card3 img,
+            .chef-card4 img {
+                max-width: 70%;
+                height: auto;
+                margin-left:40px;
+                margin-top: 30px;
+                border-radius: 50%;
+                transition: transform 0.3s ease-in-out;
+                display: block; /* To remove any residual inline alignment */
+               margin: 30px auto;
+            }
+            .chef-card1 img:hover,
+          .chef-card2 img:hover,
+      .chef-card3 img:hover,
+        .chef-card4 img:hover {
+      transform: scale(1.1);
+    }
+    @media screen and (max-width: 768px) {
+      .flip-cards {
+          flex-direction: column;
+          align-items: center;
+          margin-left: 0;
+      }
+  
+      .chef-card1, .chef-card2, .chef-card3, .chef-card4 {
+          margin-top: 20px;
+          margin-left:auto;
+          margin-right: auto;
+          width: 80%;
+          max-width: 300px;
+          height: auto;
+      }
+  
+      .chef-card1 img, .chef-card2 img, .chef-card3 img, .chef-card4 img {
+        margin: 20px;
+          max-width: 200px;
+
+      }
+  }
+
+  .footer-section{
+    margin-top: 100px;
+    background-color:orange;
+    display:flex;
+    gap:5px;
+    
+    }
+    #section1-para{
+    margin-left: 150px;
+    margin-top: 100px;
+    color:white;
+    font-size: 30px;
+    font-family: "Sofia", sans-serif;
+    text-shadow: 1px 1px 1px orange;
+    position: relative;
+    }
+    #section1-para:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 5px;
+    background:white;
+    margin-left: 130px;
+    top: 50%;
+    position: absolute;
+    }
+    .section1-content i {
+      margin-left: 150px;
+      letter-spacing: 3px;
+      color:white;
+      font-weight: 900;
+      font-size: 10px;
+      padding-top:20px;
+      }
+      #section2-para{
+      margin-left: 150px;
+      margin-top: 100px;
+      color:white;
+      font-size: 30px;
+      font-family: "Sofia", sans-serif;
+      text-shadow: 1px 1px 1px orange;
+      position: relative;
+      }
+      #section2-para:after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 5px;
+      background:white;
+      margin-left: 130px;
+      top: 50%;
+      position: absolute;
+      }
+      .section2-content i {
+        margin-left: 150px;
+        letter-spacing: 3px;
+        color:white;
+        font-weight: 900;
+        font-size: 10px;
+        padding-top:20px;
+        }
+        .icon{
+        display: flex;
+        margin-left: 150px;
+        margin-top: 20px;
+        gap:10px;
+        }
+        .icon i{
+        color:white;
+        }
+        #section3-para{
+        margin-left: 150px;
+        margin-top: 100px;
+        color:white;
+        font-size: 30px;
+        font-family: "Sofia", sans-serif;
+        text-shadow: 1px 1px 1px orange;
+        position: relative;
+        }
+        #section3-para:after {
+          content: "";
+          display: block;
+          width: 80px;
+          height: 5px;
+          background:white;
+          margin-left: 130px;
+          top: 50%;
+          position: absolute;
+          }
+          .section3-content p{
+          color:white;
+          margin-left: 150px;
+          padding-top: 20px;
+          }
+          #section4-para{
+          margin-left: 150px;
+          margin-top: 100px;
+          color:white;
+          font-size: 30px;
+          font-family: "Sofia", sans-serif;
+          text-shadow: 1px 1px 1px orange;
+          position: relative;
+          }
+          #section4-para:after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 5px;
+            background:white;
+            margin-left: 160px;
+            top: 50%;
+            position: absolute;
+            }
+            .section4-content p{
+            color:white;
+            margin-left: 150px;
+            padding-top: 20px;
+            }
+            .signup-button {
+            display: inline-flex;
+            align-items: center;
+            color: orange;
+            padding: 10px 20px;
+            border:1px solid;
+            cursor: pointer;
+            margin-left: 150px;
+            margin-top: 20px;
+            }
+            
+            .signup-button input {
+            border: none;
+            background-color: transparent;
+            color:orange;
+            font-size: 14px;
+            margin-right: 10px;
+            }
+            .footer-section {
+              opacity: 1;
+              transition: opacity 0.3s ease-in-out;
+              }
+              
+              .footer-section:hover {
+              opacity: 0.7; 
+              background-color: navy;
+              
+              }
+
+           
+
+
+          
+                                                  
+@media screen and (max-width: 320px){
+  body{
+      width: 100%;
+  }
+  .container a{
+      display:none;
+  }
+  .container2 a{
+      display: inline-flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0.4rem;
+      font-size: 0.5em;  
+  }
+  .dropdown{
+      display: none;
+  }
+  .container3{
+      display: none;
+    }     
+    .text{
+      position: absolute;
+      top: 70px;
+      margin-left: 30px;
+      
+      font-family:sans-serif;
+      font-size: 6px;
+    }  
+    .para{
+      font-size:1em;
+      max-width: 100px;
+      margin-top: 10px;
+      text-align: justify;
+      }
+      .button{
+        padding: 2px 3px;
+        font-size: 1em;  
+        }
+        .images1 img{
+          position: absolute;
+          top:70px;
+          width: 100px;
+          right: 50px;
+         
+        }
+        #para2 {
+          margin-top: 0;
+          font-size: 40px;
+        }
+        
+        #para2:before,
+        #para2:after {
+          display: none;
+        }
+      
+        #heading1 {
+          font-size: 20px;
+        }
+        .food {
+          margin-left:50px;
+        
+          flex-direction: column;
+          align-items: center;
+          gap: 50px;
+        }
+        
+        .food-images {
+          flex-direction: column;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
+        }
+        .food-images img {
+          width: 70%;
+        }
+        
+        .food-desc {
+          margin-left: 0;
+          margin-top: 30px;
+          text-align: center;
+        }
+      
+        .desc {
+          margin-left: 0;
+          margin-top: 10px;
+        }
+        .booking p{
+          margin-top: 10px;
+          font-size: 10px;
+        }
+        
+        .booking p:before,
+        .booking p:after {
+          display: none;
+        }
+          .couple-image img{
+            display: none;
+          }
+          #chef-para{
+            font-size: 20px;
+          }
+          #chef-heading{
+            font-size: 20px;
+          }
+          .footer-section{
+            display: none;
+          }
+         
+      
+}
+@media screen and (min-width:321px) and (max-width:767px){
+  body{
+      width: 100%;
+  }
+ .img{
+  width:100%;
+  height:200px;
+ }
+  .container a{
+      display: none;
+  }
+  .container2{
+      position: absolute;
+      top:0;
+      right: 35vw;
+    }
+  .container2 a{
+    text-align: center;
+      
+      display: inline-block;
+      padding:0.191rem;
+      font-size: 0.5em;  
+  }
+  .dropdown{
+      display: none;
+  }
+  
+  .container3 {
+    position: absolute;
+    top: 0;
+    right: 0.1rem; 
+  }
+  .btn {
+    position: absolute; 
+    top:0.5rem;
+    right:2rem;
+    padding: 0.2rem 1rem;
+    font-size: 0.3em;
+   
+  }
+  .text{
+    position: absolute;
+    top: 50px;
+    margin-left: 50px;
+    
+    font-family:sans-serif;
+    font-size: 6px;
+  }  
+  .para{
+    font-size:1em;
+    font-weight: 900;
+    width: 100px;
+    margin-top: 10px;
+    text-align: justify;
+    word-spacing: -3px;
+    }
+    .button{
+      padding: 8px 15px;
+      font-size: 1em;
+        
+      }
+      .images1 img{
+        position: absolute;
+        top:50px;
+        width: 100px;
+        right: 60px;
+       
+      }
+      #para2 {
+        margin-top: 0;
+        font-size: 40px;
+      }
+      
+      #para2:before,
+      #para2:after {
+        display: none;
+      }
+    
+      #heading1 {
+        font-size: 20px;
+      }
+      .fooditems {
+        margin-top:10px;
+       margin-left: 35px;
+        flex-direction: row;
+        align-items: center;
+        gap:50px;
+        justify-content: space-between;
+        
+      }
+    
+      .tea {
+        flex-direction: column;
+        align-items: center; 
+        font-size:0.8rem;
+      }
+      
+    
+      .desc {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+      .food {
+        margin-left:50px;
+      
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+      }
+      
+      .food-images {
+        flex-direction: column;
+        margin-left:auto;
+        margin-right: auto;
+        max-width:100%;
+      }
+      .food-images img {
+        width: 70%;
+      }
+      
+      .food-desc {
+        margin-left: 0;
+        margin-top: 30px;
+        text-align: center;
+      }
+      .booking p{
+        margin-top:10px;
+        font-size: 40px;
+      }
+      
+      .booking p:before,
+      .booking p:after {
+        display: none;
+      }
+      .couple-image img{
+       display: none;
+      }
+      #chef-para{
+        font-size: 20px;
+      }
+      #chef-heading{
+        font-size: 20px;
+      }
+      .footer-section{
+        display: none;
+      }
+      
+}
+
+@media screen and (min-width:768px)  and (max-width:1024px){
+body{
+  width: 100%;
+}
+.img{
+width:100%;
+height:300px;
+}
+.container a {
+display: block;
+font-size: 1.5rem; 
+}
+.active i{
+font-size: 1.5rem; 
+}
+.container2 {
+position: absolute;
+top:1rem;
+right:12rem;
+}
+.container2 a {
+  text-align: center;
+    display: inline-block;
+    padding:0.07rem;
+    font-size:0.8em;  
+    font-weight: 500; 
+}
+.dropdown {
+float: right;
+overflow: hidden;
+padding: 0.1rem;
+}
+.dropdown .dropbtn {
+font-size:0.8em;  
+}
+.dropdown-content {
+min-width: 50px;
+}
+.container3 {
+position: absolute;
+top: 0;
+right: 0.1rem; 
+}
+.btn {
+position: absolute; 
+top:1.5rem;
+right:2.5rem;
+padding: 0.1rem 1.5rem;
+font-size: 0.5em; 
+}
+.text{
+position: absolute;
+top: 80px;
+margin-left: 100px;
+
+font-family:sans-serif;
+font-size: 12px;
+}  
+.para{
+font-size:10px;
+width: 200px;
+margin-top: 10px;
+text-align: justify;
+font-weight: 900;
+
+}
+.button{
+  padding: 10px 20px;
+  font-size: 1em; 
+  }
+  .images1 img{
+    position: absolute;
+    top:80px;
+    width: 200px;
+    right: 80px;
+   
+  }
+  .card1,.card2,.card3,.card4{
+    margin-left: aut0;
+    margin-right: auto;
+  }
+  .card1 h2,
+  .card2 h2,
+  .card3 h2,
+  .card4 h2 {
+    position: static;
+    overflow: hidden;
+   
+  }
+  #para2 {
+    margin-top: 30px;
+    font-size: 40px;
+  }
+  
+  #para2:before,
+  #para2:after {
+    display: none;
+  }
+
+  #heading1 {
+    font-size: 20px;
+  }
+  .fooditems {
+    margin-top:20px;
+   margin-left: 35px;
+    flex-direction: row;
+    align-items: center;
+    gap:50px;
+    justify-content: space-between;
+    
+  }
+
+  .tea {
+    flex-direction: column;
+    align-items: center; 
+    font-size:0.8rem;
+  }
+  
+
+  .desc {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .food {
+    margin-left: 100px;
+    gap: 100px;
+  }
+  .booking p{
+    margin-top:10px;
+    font-size: 40px;
+  }
+  
+  .booking p:before,
+  .booking p:after {
+    display: none;
+  }
+  .couple-image{
+    max-width: 100%;
+  }
+  .couple-image img{
+    width:40%;
+  }
+  .footer-section{
+    display: none;
+  }
+  
+}
+@media  screen and (max-width:1280px) {
+  #para2 {
+    margin-top: 0;
+    font-size: 40px;
+  }
+  
+  #para2:before,
+  #para2:after {
+    display: none;
+  }
+
+  #heading1 {
+    font-size: 20px;
+  }
+  .fooditems {
+    margin-top:15px;
+   margin-left: 35px;
+    flex-direction: row;
+    align-items: center;
+    gap:50px;
+    justify-content: space-between;
+    
+  }
+
+  .tea {
+    flex-direction: column;
+    align-items: center; 
+    font-size:0.8rem;
+  }
+  
+
+  .desc {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .booking p{
+    margin-top:10px;
+    font-size: 40px;
+  }
+  
+  .booking p:before,
+  .booking p:after {
+    display: none;
+  }
+  .couple-image{
+    max-width: 100%;
+  }
+  .couple-image img{
+    width:40%;
+  } 
+}
+@media  screen and (max-width:280px) {
+  body{
+    width: 100%;
+  }
+  
+  .text{
+    position: absolute;
+    top: 40px;
+    margin-left: 30px;
+    
+    font-family:sans-serif;
+    font-size: 5px;
+    }  
+    .para{
+    font-size:5px;
+    width: 100px;
+    margin-top: 10px;
+    text-align: justify;
+    font-weight: 900;
+    
+    }
+    .button{
+      padding: 5px 10px;
+      font-size: 1em; 
+      }
+      .images1 img{
+        position: absolute;
+        top:40px;
+        width: 100px;
+        right: 30px;
+       
+      }
+      .card1,.card2,.card3,.card4{
+        margin-left: aut0;
+        margin-right: auto;
+      }
+      .card1 h2,.card2 h2,.card3 h2,.card4 h2 {
+        font-size: 1rem;
+      }
+      
+      .card1 p,.card2 p,.card3 p,.card4 p {
+        font-size: 1rem;
+      }
+      #para2 {
+        margin-top: 0;
+        font-size: 30px;
+      }
+    
+      #heading1 {
+        font-size: 10px;
+      }
+      .fooditems {
+        margin-top:15px;
+        flex-direction: row;
+        align-items: center;
+        gap:20px;
+        justify-content: space-between;
+        
+      }
+    
+      .tea {
+        flex-direction: column;
+        align-items: center; 
+        font-size:0.8rem;
+      }
+      
+    
+      .desc {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+}
+
+  
